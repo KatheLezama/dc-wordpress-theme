@@ -1,0 +1,136 @@
+form {
+	
+	p {
+		margin-bottom: 5px;
+	}
+	label {
+		width: 100%;
+		.wpcf7-text {
+			width: 100%;
+		}
+	}
+	
+	::-webkit-input-placeholder {
+		font-size: 14px;
+	}
+	::-moz-placeholder {
+		font-size: 14px;
+	}
+	:-moz-placeholder {
+		font-size: 14px;
+	}
+	:-ms-input-placeholder {
+		font-size: 14px;
+	}
+	
+	/*//////////////////////// Begin: styles checkbox ////////////////////////*/
+	.form__privacy-policy {
+		.wpcf7-checkbox {
+			display: inline-block;
+			width: 40px;
+		}
+		input {
+			position: absolute;
+			top: 0;
+			width: 16px;
+			height: 16px;
+			z-index: 5;
+			opacity: 0;
+		}
+		.wpcf7-list-item-label::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 13px;
+			width: 18px;
+			height: 18px;
+			background-color: #fff;
+			border: 2px solid #17aab9;
+			border-radius: 4px;
+			-webkit-transition: 0.2s;
+			-moz-transition: 0.2s;
+			transition: 0.2s;
+		}
+		input:hover~.wpcf7-list-item-label::before {
+			-webkit-box-shadow: 0 0 7px #17aab9;
+			-moz-box-shadow: 0 0 7px #17aab9;
+			box-shadow: 0 0 7px #17aab9;
+		}
+		input:checked~.wpcf7-list-item-label::before {
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+		.wpcf7-list-item-label::after {
+			content: '✓' !important;
+			position: absolute;
+			top: -14px;
+			left: 16px;
+			font-size: 0;
+		}
+		input:checked~.wpcf7-list-item-label::after {
+			font-size: 24px;
+		}
+		a {
+			font-size: 13px;
+			-webkit-transition: 0.2s;
+			-moz-transition: 0.2s;
+			transition: 0.2s;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		.wpcf7-not-valid-tip {
+			position: absolute;
+			top: 20px;
+			white-space: nowrap;
+		}
+	}
+	/*//////////////////////// End: styles checkbox ////////////////////////*/
+	
+	/*//////////////////////// Begin: Alert message styles ////////////////////////*/
+	.wpcf7-form-control-wrap {
+		.wpcf7-not-valid-tip {
+			color: #f70000;
+			font-size: 12px;
+		}
+	}
+	.wpcf7-validation-errors {
+		border: 2px solid #f70000;
+	}
+	.wpcf7-validation-errors,
+	.wpcf7-mail-sent-ok {
+		text-align: center;
+		border-radius: 10px;
+		color: #f70000;
+		line-height: 16px;
+		@media only screen and (max-width: 991px) {
+			font-size: 12px;
+			line-height: 14px;
+			margin-top: 35px;
+		}
+	}
+	.wpcf7-mail-sent-ok {
+		color: #398f14;
+	}
+	/*//////////////////////// End: Alert message styles ////////////////////////*/
+	
+	/*//////////////////////// Begin: Styles ajax loader ////////////////////////*/
+	.ajax-loader {
+		background-image: none !important;
+		display: inline-block !important;
+		width: 1.1rem !important;
+		height: 1.1rem !important;
+		vertical-align: text-bottom !important;
+		border: 0.2em solid #17aab9 !important;
+		border-right-color: transparent !important;
+		-webkit-border-radius: 50% !important;
+		-moz-border-radius: 50% !important;
+		-ms-border-radius: 50% !important;
+		border-radius: 50% !important;
+		-webkit-animation: spinner-border .75s linear infinite !important;
+		animation: spinner-border .75s linear infinite !important;
+	}
+	/*//////////////////////// End: Styles ajax loader ////////////////////////*/
+	
+}

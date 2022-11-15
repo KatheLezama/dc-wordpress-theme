@@ -1,0 +1,102 @@
+:root {
+	--idt-color-1: #ffffff;
+	--idt-color-2: #004691;
+	--idt-color-3: #9681FF;
+	--idt-color-4: #72217B;
+	--idt-color-5: #F3F9FF;
+	--idt-color-6: #000000;
+	--idt-color-7: #3B2B5B;
+	--idt-color-8: #E0E0E1;
+	--idt-color-9: #00000029;
+	--idt-color-10: #63666A;
+	--idt-color-11: #B12384;
+	--idt-color-12: #632678;
+	--idt-text-color-1: var(--idt-color-1);
+	--idt-text-color-2: var(--idt-color-2);
+	--idt-text-color-3: var(--idt-color-3);
+	--idt-text-color-4: var(--idt-color-4);
+	--idt-text-color-5: var(--idt-color-5);
+	--idt-text-color-6: var(--idt-color-6);
+	--idt-text-color-7: var(--idt-color-7);
+	--idt-text-color-8: var(--idt-color-8);
+	--idt-text-color-9: var(--idt-color-9);
+	--idt-text-color-10: var(--idt-color-10);
+	--idt-text-color-11: var(--idt-color-11);
+	--idt-text-color-12: var(--idt-color-12);
+	--idt-bg-color-1: var(--idt-color-1);
+	--idt-bg-color-2: var(--idt-color-2);
+	--idt-bg-color-3: var(--idt-color-3);
+	--idt-bg-color-4: var(--idt-color-4);
+	--idt-bg-color-5: var(--idt-color-5);
+	--idt-bg-color-6: var(--idt-color-6);
+	--idt-bg-color-7: var(--idt-color-7);
+	--idt-bg-color-8: var(--idt-color-8);
+	--idt-bg-color-9: var(--idt-color-9);
+	--idt-bg-color-10: var(--idt-color-10);
+	--idt-bg-color-11: var(--idt-color-11);
+	--idt-bg-color-12: var(--idt-color-12);
+	--idt-font-family-1: 'Roboto', sans-serif;
+	--idt-font-size-desktop: 16px;
+	--idt-font-size-mobile: 14px;
+	--bs-primary: var(--idt-color-1);
+}
+html, body {
+	font-family: var(--idt-font-family-1);
+	font-size: var(--idt-font-size-desktop);
+	line-height: 1.4rem;
+	overflow-x: hidden;
+	color: var(--idt-color-2);
+}
+html {
+	scroll-behavior: smooth;
+}
+img,
+iframe {
+	max-width: 100%;
+	height: auto;
+}
+.idt-title {
+	font-size: 2.5rem;
+	line-height: 2.8rem;
+	color: var(--idt-text-color-1);
+	margin-bottom: 1rem;
+	font-weight: bold;
+	@media (max-width: 991px) {
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}
+}
+
+.idt-separator {
+	padding-top: 7.2rem;
+	@media only screen and (max-width: 991px) {
+		padding-top: 4.5rem;
+	}
+}
+
+.idt-container {
+	width: 100%;
+	padding-left: 15px;
+	margin-left: auto;
+	@media (min-width: 576px){
+		max-width: calc(540px + (100% - 540px) / 2);
+	}
+	@media (min-width: 768px) {
+		max-width: calc(720px + (100% - 720px) / 2);
+	}
+	@media (min-width: 992px){
+		max-width: calc(960px + (100% - 960px) / 2);
+	}
+	@media (min-width: 1200px){
+		max-width: calc(1140px + (100% - 1140px) / 2);
+	}
+	@media (min-width: 1400px){
+		max-width: calc(1320px + (100% - 1320px) / 2);
+	}
+	&--right {
+		padding-left: 0;
+		padding-right: 15px;
+		margin-left: 0;
+		margin-right: auto;
+	}
+}

@@ -1,0 +1,80 @@
+.idt-banner {
+	position: relative;
+	.idt-banner__content {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		right: 0;
+		@media only screen and (max-width: 767px) {
+			position: initial;
+			padding: 10px;
+			text-align: center;
+			background-color: #f26649;
+		}
+		.container {
+			@media only screen and (max-width: 767px) {
+				max-width: 100%;
+			}
+		}
+		.idt-banner__title,
+		.idt-banner-pre-title{
+			color: #fff;
+		}
+		.idt-banner__pre-title {
+			font-size: 20px;
+			@media only screen and (max-width: 767px) {
+				font-size: 16px;
+			}
+		}
+		.idt-banner__title {
+			font-weight: bold;
+			font-size: 40px;
+			@media only screen and (max-width: 767px) {
+				font-size: 20px;
+			}
+		}
+		.idt-banner__description {
+			@media (min-width: 1200px) {
+				width: 40%;
+			}
+			@media only screen and (min-width: 992px) and (max-width: 1199px) {
+				width: 60%;
+			}
+		}
+		p {
+			margin-bottom: 5px;
+			color: #fff;
+			font-size: 14px;
+		}
+	}
+	&.idt-banner__simple {
+		background-color: #f26649;
+		padding-top: 110px;
+		padding-bottom: 25px;
+		.idt-banner__content {
+			position: initial;
+			overflow: hidden;
+		}
+		.idt-banner__title {
+			margin-bottom: 0;
+			display: inline-block;
+			padding-right: 40px;
+		}
+		.container {
+			position: relative;
+			&:after {
+				content: '';
+				height: 1px;
+				background-color: #fff;
+				display: inline-block;
+				position: absolute;
+				width: 1000%;
+				bottom: 37%;
+				margin: auto;
+			}
+		}
+	}
+}
+.idt-banner__image {
+	width: 100%;
+}

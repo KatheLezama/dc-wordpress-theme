@@ -1,0 +1,18 @@
+.idt-pagination {
+	.page-numbers {
+		padding: 0;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin: 2rem 1rem;
+	}
+	li {
+		margin-right: 10px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

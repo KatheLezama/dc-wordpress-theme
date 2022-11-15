@@ -1,0 +1,65 @@
+.idt-content-page {
+
+	&__content {
+		padding-top: 3.1rem;
+		padding-bottom: 3.1rem;
+
+		@media only screen and (max-width: 991px) {
+			padding-top: 4rem;
+		}
+
+		* {
+			color: var(--idt-text-color-3);
+		}
+
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-size: 1.12rem;
+			font-weight: bold;
+			margin-bottom: 2rem;
+			font-family: var(--idt-font-family-1);
+		}
+
+		p,
+		ul {
+			margin-bottom: 2rem;
+		}
+
+		ul {
+			padding-left: 1rem;
+		}
+
+		a {
+			font-weight: bold;
+			text-decoration: none;
+			font-family: var(--idt-font-family-1);
+			transition: 200ms all ease-in-out;
+			color: var(--idt-text-color-5);
+		}
+
+		img {
+			width: auto;
+		}
+
+		iframe {
+			aspect-ratio: 16/9;
+			width: 100%;
+
+			@media only screen and (max-width: 991px) {
+				height: 500px;
+			}
+		}
+
+		figcaption {
+			margin-top: 1rem;
+		}
+
+		.wp-block-image {
+			text-align: center;
+		}
+
+	}
+}

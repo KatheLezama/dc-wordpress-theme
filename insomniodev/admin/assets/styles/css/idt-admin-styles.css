@@ -1,0 +1,227 @@
+#idt-admin-tpl-dashboard img {
+	max-width: 100%;
+}
+.idt-admin-menu {
+	min-height: 100vh;
+	background-color: #666;
+	margin: 0;
+	padding-top: 58px;
+}
+.idt-admin-menu .item {
+	display: flex;
+	align-content: center;
+	width: 100%;
+	background-color: #32373c;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 15px;
+	cursor: pointer;
+	border-bottom: 2px solid transparent;
+	text-align: left;
+	transition: 0.3s;
+}
+.idt-admin-menu .item .dashicons {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-right: 10px;
+}
+.idt-admin-menu .item:hover,
+.idt-admin-menu .item:focus,
+.idt-admin-menu .item.active {
+	background-color: #23282d;
+	border-bottom: 2px solid #fff;
+	transition: 0.3s;
+}
+.idt-admin-logos {
+	display: flex;
+	flex-wrap: wrap;
+}
+.idt-image-manager .idt-image-preview {
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 2px solid #666;
+}
+.idt-image-manager--logo {
+	width: 200px;
+	text-align: center;
+	margin-right: 4rem;
+}
+.idt-image-manager--logo .idt-image-preview-wrapper {
+	position: relative;
+}
+.idt-image-manager--logo label {
+	display: block;
+	margin-bottom: 1rem;
+}
+.idt-clear-image {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: -1rem;
+	right: -1rem;
+	border-radius: 50%;
+	border: none;
+	color: #fff;
+	background-color: #666;
+	transition: 400ms all ease-in-out;
+	cursor: pointer;
+}
+.idt-clear-image:hover {
+	background-color: #23282d;
+}
+.idt-button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #fff;
+	background-color: #666;
+	border-radius: 0;
+	border: none;
+	height: 40px;
+	padding: 1rem;
+	min-width: 100px;
+	cursor: pointer;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: 400ms all ease-in-out;
+}
+.idt-button:hover {
+	background-color: #23282d;
+}
+.idt-button .dashicons {
+	margin-left: 10px;
+}
+.idt-button.idt-save-settings {
+	background-color: #30b130;
+}
+.idt-button.idt-save-settings:hover {
+	background-color: #0f740f;
+}
+.idt-admin-title {
+	background-color: #666;
+	padding: 20px;
+	text-align: center;
+	font-size: 17px;
+	color: #fff;
+	margin: 0;
+}
+.idt-container {
+	padding: 15px;
+}
+.idt-admin-content {
+	min-height: 100vh;
+	position: relative;
+}
+.idt-custom-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.idt-custom-row .idt-custom-col-1 {
+	flex: 1;
+}
+.idt-custom-row .idt-custom-col-5 {
+	flex: 5;
+}
+.idt-spinner-container {
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	background-color: #66666654;
+}
+.idt-spinner-container .idt-spinner {
+	font-size: 40px;
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+.idt-input-checkbox {
+	width: 20px !important;
+	height: 20px !important;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #666 !important;
+	border-radius: 0 !important;
+}
+.idt-input-checkbox:checked {
+	border-color: #23282d !important;
+	box-shadow: 0 0 0 2px #a3a3a3 !important;
+}
+.idt-input-checkbox:checked:before{
+	content: "\f15e" !important;
+	font-weight: bold;
+	width: initial !important;
+	height: initial !important;
+	font-size: 1.2rem;
+	font-family: dashicons;
+	display: flex !important;
+	padding-top: 3px;
+	padding-left: 4px;
+}
+.idt-input-container.idt-input-container--checkbox {
+	display: flex;
+	align-items: center;
+}
+.idt-input-container.idt-input-container--checkbox label {
+	width: 40%;
+}
+.idt-admin-social .idt-input-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.idt-admin-social .idt-label {
+	min-width: 100px;
+	width: 10%;
+	border: 0 !important;
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
+.idt-admin-social .idt-input {
+	width: 80% !important;
+	height: 35px;
+	padding: 1rem;
+	border: 0;
+}
+#idt-admin-tpl-dashboard .idt-message {
+	background-color: #23282d;
+	color: #fff;
+	padding: 15px;
+	text-align: center;
+}
+#idt-admin-tpl-dashboard .idt-input-container {
+	margin-bottom: 15px;
+}
+#idt-admin-tpl-dashboard .idt-input-container .idt-label {
+	display: block;
+	font-size: 14px;
+	border-bottom: 2px solid;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+#idt-admin-tpl-dashboard .idt-input-container .idt-input {
+	width: 100%;
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-180deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}

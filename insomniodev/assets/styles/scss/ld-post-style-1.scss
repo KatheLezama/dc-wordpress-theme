@@ -1,0 +1,50 @@
+.idt-post {
+	position: relative;
+	border-radius: 25px;
+	overflow: hidden;
+	margin: 10px;
+}
+.idt-post__image {
+	width: 100%;
+}
+.idt-post__caption {
+	position: absolute;
+	bottom: 10%;
+	left: 7%;
+	right: 7%;
+	z-index: 1;
+}
+.idt-post__categories {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 0;
+	@media only screen and (max-width: 991px) {
+		margin-bottom: 0;
+	}
+	a,
+	a:hover {
+		font-size: 1rem;
+		color: #fff;
+	}
+}
+.idt-post__title {
+	a {
+		display: block;
+	}
+	@media only screen and (max-width: 991px) {
+		margin-bottom: 0;
+	}
+}
+.idt-post__button {
+	color: #515151;
+	font-weight: bold;
+	margin-left: auto;
+	display: table;
+	&:hover,
+	&:hover i {
+		color: #b80d6b;
+	}
+	i {
+		color: #515151;
+	}
+}

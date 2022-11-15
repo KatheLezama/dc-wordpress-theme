@@ -1,0 +1,17 @@
+.idt-blog-section {
+    margin-top: 4rem;
+
+    @media (max-width: 991px) {
+        margin-top: 0;
+    }
+}
+
+.idt-content-page {
+    min-height: 100vh;
+
+    .idt-content-page__section,
+    .idt-content-page__wrapper {
+        padding-top: 3rem;
+        text-align: center;
+    }
+}

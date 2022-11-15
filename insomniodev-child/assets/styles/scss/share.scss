@@ -1,0 +1,19 @@
+.idt-share {
+  &__modal {
+    .modal-title {
+      font-size: 1.875rem;
+      font-weight: 900;
+      line-height: 1.875rem;
+      color: var(--idt-text-color-4);
+    }
+    .idt-close {
+      font-size: 1.25rem;
+      color: var(--idt-color-3);
+      background-color: transparent;
+      border: 0;
+      &:hover {
+        color: var(--idt-color-11);
+      }
+    }
+  }
+}

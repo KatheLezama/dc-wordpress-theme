@@ -1,0 +1,44 @@
+.idt-share {
+
+}
+.idt-share__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.idt-share__modal-body {
+	padding: 0 !important;
+}
+.idt-share__list-item {
+	width: 50%;
+	a,
+	a:hover {
+		color: #fff;
+		display: block;
+		text-align: center;
+		padding: 10px;
+		font-size: 25px;
+		transition: 0.5s;
+	}
+	a:hover {
+		opacity: 0.7;
+	}
+}
+.idt-share__whatsapp {
+	background-color: #71c169;
+}
+.idt-share__facebook {
+	background-color: #4267b2;
+}
+.idt-share__twitter {
+	background-color: #1da1f2;
+}
+.idt-share__linkedin {
+	background-color: #0077b5;
+}
+.idt-share__email {
+	background-color: #bf2626;
+}

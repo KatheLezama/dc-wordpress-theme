@@ -1,0 +1,56 @@
+#idt-header {
+    .idt-header-sticky {
+        background: var(--idt-bg-color-7);
+        padding: 1.1rem 2.25rem 1.17rem 2.75rem;
+        transition: 300ms ease-in-out;
+        @media (max-width: 767px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .idt-menu-desktop, .idt-mobile-menu-container {
+        li {
+            margin: 0 0 0 1.5rem;
+
+            a {
+                text-decoration: none;
+                color: var(--idt-text-color-1);
+                display: flex;
+                font-size: 1rem;
+                align-items: center;
+                background-color: transparent;
+                padding: 0.64rem 1.8rem;
+                border: 1px solid var(--idt-color-1);
+                border-radius: 5px;
+                transition: 300ms all ease-in-out;
+
+                &:after {
+                    content: '\f105';
+                    font-size: 1.5rem;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    padding-left: 1.3rem;
+                }
+
+                &:hover {
+                    color: var(--idt-text-color-4);
+                    background-color: var(--idt-bg-color-1);
+                }
+            }
+        }
+    }
+
+    .idt-mobile-menu-container {
+        background-color: var(--idt-bg-color-7);
+        padding-top: 2rem;
+        li {
+            margin-left: 0;
+        }
+    }
+
+    .idt-logo {
+        width: 100%;
+        max-width: 150px;
+    }
+}

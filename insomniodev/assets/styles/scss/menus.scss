@@ -1,0 +1,15 @@
+.idt-menu {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 0;
+	display: table;
+	&.idt-horizontal {
+		li {
+			display: inline-block;
+			margin-right: 5px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

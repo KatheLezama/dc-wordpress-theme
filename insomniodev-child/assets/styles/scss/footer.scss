@@ -1,0 +1,204 @@
+#idt-footer {
+    background-color: var(--idt-bg-color-12);
+
+    .ld-widget-title {
+        font-size: 1rem;
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+    }
+
+    h3 {
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: 2.1px;
+
+        &:not(:last-child) {
+            margin-bottom: 1.75rem;
+        }
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    p {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+    img {
+        margin-bottom: 1.43rem;
+    }
+
+    #idt-footer-1 {
+        padding-top: 2.37rem;
+
+        .row {
+            @media only screen and (max-width: 991px) {
+                flex-direction: column;
+            }
+        }
+
+        * {
+            color: var(--idt-text-color-1) !important;
+        }
+
+        @media only screen and (max-width: 991px) {
+            padding: 2.31rem 0 1rem 0;
+        }
+
+        .idt-section-1 {
+            padding-top: 2.5rem;
+
+            @media only screen and (max-width: 991px) {
+                display: none;
+            }
+        }
+
+        .widget_media_image:not(:last-child) {
+            margin-bottom: 1.75rem;
+        }
+
+
+        .widget_text {
+            font-size: 0.87rem;
+            line-height: 1.25rem;
+            margin-bottom: 2.25rem;
+
+            ul {
+                padding-left: 0;
+                list-style: none;
+
+                &:not(:last-child) {
+                    margin-bottom: 1.31rem;
+                }
+
+                li {
+                    list-style: none;
+                    display: flex;
+                }
+            }
+
+            i {
+                margin-top: 5px;
+                margin-right: 0.93rem;
+            }
+
+            a:hover {
+                color: var(--idt-color-5);
+            }
+        }
+
+        .widget_nav_menu {
+            margin-bottom: 1rem;
+
+            .idt-widget-title {
+                margin-bottom: 2.56rem;
+                font-size: 1rem;
+                line-height: 0.8rem;
+                font-size: 800;
+            }
+
+            ul {
+                list-style: none;
+                padding-left: 0;
+            }
+
+            li {
+                display: block;
+            }
+
+            a {
+                font-size: 0.875rem;
+                line-height: 1.06rem;
+                font-weight: 100;
+                display: inline-block;
+                position: relative;
+                padding: 0.5rem 0;
+
+                &:before {
+                    content: ' ';
+                    width: 0;
+                    height: 1px;
+                    position: absolute;
+                    bottom: 0.3rem;
+                    background-color: var(--idt-bg-color-5);
+                    transition: 300ms all ease-in-out;
+                }
+
+                &:hover {
+                    &:before {
+                        width: 100%;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 991px) {
+                position: relative;
+                padding: 0 1rem;
+
+                &:before {
+                    content: '\2b';
+                    color: var(--idt-color-1);
+                    font-size: 1rem;
+                    font-family: 'Font Awesome 5 Free';
+                    position: absolute;
+                    top: -2px;
+                    right: 10px;
+                    padding: 0 10px;
+                    cursor: pointer;
+                    transform: rotate(0deg);
+                }
+            }
+
+        }
+
+        .widget_nav_menu.active {
+            &:before {
+                transform: rotate(180deg);
+            }
+        }
+
+        .menu {
+            @media only screen and (max-width: 991px) {
+                display: none;
+            }
+
+        }
+    }
+
+    #idt-footer-2 {
+        .container {
+            border-top: 1px solid var(--idt-color-1);
+            padding: 1.43rem 0 0.56rem 0;
+        }
+
+        .idt-section-5 {
+            @media only screen and (max-width: 991px) {
+                display: none;
+            }
+        }
+
+        .idt-section-6 {
+            @media only screen and (max-width: 991px) {
+                display: none;
+            }
+        }
+
+        .copyright {
+            &__content {
+                @media only screen and (max-width: 991px) {
+                    text-align: center;
+                    margin-bottom: 1.5rem;
+                }
+
+                p {
+                    font-size: 0.75rem;
+                    color: var(--idt-text-color-1);
+                    margin-top: 0.68rem;
+                }
+            }
+        }
+    }
+
+}
